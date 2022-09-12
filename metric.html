@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="assignment1.css">
+  <title>BMR Calculator</title>
+</head>
+<body>
+  <header>BMR Calculator</header>
+    <div class="main">
+      <br>
+      <nav>
+        <ul>
+              <li><a href="assignment1.html">Imperial</a></li>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <li><a href="metric.html">Metric</a></li>
+         </ul>
+        </nav>
+  <br>
+  <div class="first-container">
+  <div class="second-container">
+    <div class="application">
+    
+      <form>
+        <div class="radio-buttons">
+          <label class="label">1. Select your gender</label>
+          <input type="radio" checked="true" id="male" name="gender" value="male" class="auto-style2"><span class="auto-style2"><label for="male" class="gender-label">Male</label>
+          <input type="radio" id="female" name="gender" value="female" class="auto-style2"><span class="auto-style2"><label for="female" class="gender-label">Female</label>
+        </div><BR>
+
+        <label class="label">2. Age</label>
+        <input type="number" id="age" class="auto-style2" min="0" max="130" width="50ch" placeholder="Years"><br class="auto-style2">
+		  <br></label>
+        
+      <label class="label">3. Height</label>
+		  <label class="subHeading">Centimeters: &nbsp;
+        <input type="number" id="feet"  min="0" max="9" placeholder="cm"><span class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+&nbsp;<br><br>
+
+       <label class="label">4. Weight</label>
+        <label class="subHeading">Kilograms: &nbsp;<input type="number" id="stone" class="auto-style4" min="0" max="80" placeholder="Kilograms"></label>
+		  <label class="subHeading">Grams: &nbsp;
+        <input type="number" id="lbs" class="auto-style2" min="0" max="13" placeholder="Grams"></label>
+		  <br><br>
+        
+      &nbsp;&nbsp;&nbsp;<input type="submit" id="submit" width="80px" height="30px">
+      </form><br><br><br>
+      
+    </div>
+
+  </div>
+  <div id="results">
+    <div class="results-container">
+      <h1 class="label">Your BMR is:</h1><br>
+      <p id="bmi-result" class="label">Placeholder text</p><br>
+    </div>
+  </div>
+</div>
+</div>
+  <script src="metric.js"></script>
+</body>
+</html>
